@@ -9,6 +9,9 @@
       Eleonora Sanna
     </h1>
     <p class="mt-2 text-lg">Estudiante de diseño</p>
+    <RouterLink to="/proyectos" class="mt-6 inline-block underline">
+  Ver proyectos
+</RouterLink>
   </section>
 </template>
 
