@@ -2,7 +2,7 @@
 const menuItems = [
   { label: 'home', href: '#home' },
   { label: 'about me', href: '#about-me' },
-  { label: 'background', href: '#education' },
+  { label: 'background', href: '#background' },
   { label: 'projects', href: '#projects' },
   { label: 'contacts', href: '#contacts' },
 ]
@@ -88,7 +88,91 @@ function scrollToSection(sectionId: string) {
 </div>
 </section>
 
+<section
+  id="background"
+  class="min-h-svh scroll-mt-14 bg-black px-6 py-16 text-white sm:px-12"
+>
+  <div class="grid gap-16 lg:grid-cols-2">
+    <div>
+      <h2 class="text-5xl font-medium tracking-tight sm:text-7xl">
+        education
+      </h2>
 
+      <div class="mt-10 space-y-6">
+        <div>
+          <h3>High School - Classic course</h3>
+          <p class="italic">
+            Liceo Classico D.A. Azuni (Sassari, Italy) -
+            09/2019 - 06/2024
+          </p>
+        </div>
+
+        <div>
+          <h3>Bachelor’s Degree in Design</h3>
+          <p class="italic">
+            Università degli studi di Sassari (Alghero, Italy) -
+            10/2024 - current
+          </p>
+        </div>
+      </div>
+
+      <h2 class="mt-16 text-5xl font-medium tracking-tight sm:text-7xl">
+        work exp
+      </h2>
+
+      <div class="mt-10">
+        <h3>Summer Camp Assistant (Erasmus + Programme)</h3>
+        <p class="italic">
+          Colegio Salesiano Santísima Trinidad (Seville, Spain) -
+          06/2022 - 07/2022
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="text-5xl font-medium tracking-tight sm:text-7xl">
+        skills
+      </h2>
+
+      <div class="mt-10 space-y-6">
+        <div>
+          <h3>Software</h3>
+          <ul class="italic">
+            <li>Adobe Photoshop</li>
+            <li>Adobe Illustrator</li>
+            <li>Adobe AfterEffects</li>
+            <li>AutoCAD</li>
+            <li>Blender 3D (modelling and rendering)</li>
+            <li>COMSOL Multiphysics (basic proficiency)</li>
+            <li>Fusion 360 (basic proficiency)</li>
+            <li>Figma</li>
+            <li>Canva</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Design skills</h3>
+          <ul class="italic">
+      
+            <li>Sketching and prototyping</li>
+            <li>Technical drawing</li>
+            <li>2D and 3D modelling</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section
+  id="projects"
+  class="min-h-svh scroll-mt-14 px-6 py-16 sm:px-12"
+>
+  <h2 class="text-5xl font-medium leading-tight tracking-tight sm:text-7xl">
+    projects
+  </h2>
+</section>
 </template>
 
 
