@@ -15,6 +15,7 @@ const graphicProjects = [
   {
     title: '03.climate threads',
     image: '/images/climate-threads-cover.png',
+     to: '/proyectos/climate-threads',
   },
 ]
 </script>
