@@ -17,7 +17,7 @@ export const router = createRouter({
       component: Projects
     },
     {
-      path: '/:patchMatch(.*)',
+      path: '/:pathMatch(.*)*',
       redirect: '/'
     }
   ]

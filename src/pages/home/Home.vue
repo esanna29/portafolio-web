@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Projects from '@/pages/projects/Projects.vue'
 const menuItems = [
   { label: 'home', href: '#home' },
   { label: 'about me', href: '#about-me' },
@@ -165,14 +166,7 @@ function scrollToSection(sectionId: string) {
   </div>
 </section>
 
-<section
-  id="projects"
-  class="min-h-svh scroll-mt-14 px-6 py-16 sm:px-12"
->
-  <h2 class="text-5xl font-medium leading-tight tracking-tight sm:text-7xl">
-    projects
-  </h2>
-</section>
+<Projects />
 </template>
 
 
