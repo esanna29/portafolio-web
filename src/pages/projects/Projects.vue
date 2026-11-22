@@ -8,9 +8,10 @@ const graphicProjects = [
     to: '/proyectos/eu-on-fire',
   },
   {
-    title: '02.coffee journal',
-    image: '/images/coffee-journal.jpg',
-  },
+  title: '02.coffee journal',
+  image: '/images/coffee-journal.jpg',
+  to: '/proyectos/coffee-journal',
+},
   {
     title: '03.climate threads',
     image: '/images/climate-threads-cover.png',
