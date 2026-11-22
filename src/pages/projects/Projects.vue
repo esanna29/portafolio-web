@@ -5,6 +5,7 @@ const graphicProjects = [
   {
     title: '01.eu on fire',
     image: '/images/eu-on-fire-cover.jpg',
+    to: '/proyectos/eu-on-fire',
   },
   {
     title: '02.coffee journal',
@@ -41,6 +42,7 @@ const graphicProjects = [
               v-for="project in graphicProjects"
               :key="project.title"
               :title="project.title"
+              :to="project.to"
               :image="project.image"
             />
           </div>
@@ -57,6 +59,7 @@ const graphicProjects = [
           <ProjectCard
   title="04.memories"
   image="/images/memories-cover.png"
+  
 />
         </div>
       </div>

@@ -1,12 +1,19 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router'
+
 defineProps<{
   title: string
   image: string
+  to?: string
 }>()
 </script>
 
 <template>
-  <div class="relative h-32 overflow-hidden rounded-[2rem] sm:h-36">
+  <component
+  :is="to ? RouterLink : 'div'"
+  :to="to"
+  class="relative block h-32 overflow-hidden rounded-[2rem] sm:h-36"
+>
     <img
       :src="image"
       alt=""
@@ -18,5 +25,5 @@ defineProps<{
     >
       {{ title }}
     </p>
-  </div>
+  </component>
 </template>
