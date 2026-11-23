@@ -84,6 +84,7 @@ const technicalProjects = [
   title="04.memories"
   image="/images/memories-cover.png"
   image-position="50% 93%"
+  to="/proyectos/memories"
 />
         </div>
      <div class="mt-2 grid gap-2 lg:grid-cols-[7rem_1fr]">

@@ -5,6 +5,7 @@ import EuOnFire from '@/pages/projects/EuOnFire.vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
 import CoffeeJournal from '@/pages/projects/CoffeeJournal.vue'
 import ClimateThreads from '@/pages/projects/ClimateThreads.vue'
+import Memories from '@/pages/projects/Memories.vue'
 
 export const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -38,6 +39,11 @@ export const router = createRouter({
   path: 'climate-threads',
   name: 'climate-threads',
   component: ClimateThreads,
+},
+{
+  path: 'memories',
+  name: 'memories',
+  component: Memories,
 },
       ],
     },
