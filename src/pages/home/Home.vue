@@ -9,14 +9,20 @@ const menuItems = [
 ]
 
 function scrollToSection(sectionId: string) {
- if (sectionId === '#home') {
-  window.scrollTo({ top: 0, behavior: 'smooth' })
-  return
-}
+  if (sectionId === '#home') {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    return
+  }
+
   const element = document.querySelector<HTMLElement>(sectionId)
+  const header = document.querySelector<HTMLElement>('header')
 
   if (element) {
-    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    const headerHeight = header?.getBoundingClientRect().height ?? 0
+    const top =
+      element.getBoundingClientRect().top + window.scrollY - headerHeight
+
+    window.scrollTo({ top, behavior: 'smooth' })
   }
 }
 </script>
