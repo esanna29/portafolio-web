@@ -7,6 +7,7 @@ import CoffeeJournal from '@/pages/projects/CoffeeJournal.vue'
 import ClimateThreads from '@/pages/projects/ClimateThreads.vue'
 import Memories from '@/pages/projects/Memories.vue'
 import CoffeeTable from '@/pages/projects/CoffeeTable.vue'
+import WoodLamp from '@/pages/projects/WoodLamp.vue'
 
 export const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -50,6 +51,11 @@ export const router = createRouter({
   path: 'coffee-table',
   name: 'coffee-table',
   component: CoffeeTable,
+},
+{
+  path: 'wood-lamp',
+  name: 'wood-lamp',
+  component: WoodLamp,
 },
       ],
     },

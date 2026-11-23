@@ -34,6 +34,7 @@ const technicalProjects = [
     image: '/images/wood-lamp-cover.png',
     imagePosition: '100% 50%',
     imageScale: 1.1,
+    to: '/proyectos/wood-lamp',
   },
 ]
 </script>
