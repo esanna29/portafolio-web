@@ -27,6 +27,7 @@ const technicalProjects = [
     image: '/images/coffee-table-cover.png',
     imagePosition: '40% 50%',
     imageScale: 1.7,
+    to: '/proyectos/coffee-table',
   },
   {
     title: '06.wood lamp',
@@ -104,6 +105,7 @@ const technicalProjects = [
       :image="project.image"
       :image-position="project.imagePosition"
       :image-scale="project.imageScale"
+      :to="project.to"
     />
   </div>
 </div>

@@ -6,6 +6,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import CoffeeJournal from '@/pages/projects/CoffeeJournal.vue'
 import ClimateThreads from '@/pages/projects/ClimateThreads.vue'
 import Memories from '@/pages/projects/Memories.vue'
+import CoffeeTable from '@/pages/projects/CoffeeTable.vue'
 
 export const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -44,6 +45,11 @@ export const router = createRouter({
   path: 'memories',
   name: 'memories',
   component: Memories,
+},
+{
+  path: 'coffee-table',
+  name: 'coffee-table',
+  component: CoffeeTable,
 },
       ],
     },
