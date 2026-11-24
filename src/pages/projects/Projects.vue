@@ -124,6 +124,7 @@ const technicalProjects = [
       title="07.motion graphics"
       image="/images/motion-graphics-cover.png"
       :image-scale="1.1"
+      to="/proyectos/motion-graphics"
     />
   </div>
 </div>

@@ -8,6 +8,7 @@ import ClimateThreads from '@/pages/projects/ClimateThreads.vue'
 import Memories from '@/pages/projects/Memories.vue'
 import CoffeeTable from '@/pages/projects/CoffeeTable.vue'
 import WoodLamp from '@/pages/projects/WoodLamp.vue'
+import MotionGraphics from '@/pages/projects/MotionGraphics.vue'
 
 export const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -56,6 +57,11 @@ export const router = createRouter({
   path: 'wood-lamp',
   name: 'wood-lamp',
   component: WoodLamp,
+},
+{
+  path: 'motion-graphics',
+  name: 'motion-graphics',
+  component: MotionGraphics,
 },
       ],
     },
