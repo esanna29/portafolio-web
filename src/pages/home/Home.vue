@@ -173,6 +173,49 @@ function scrollToSection(sectionId: string) {
 </section>
 
 <Projects />
+<section
+  id="contacts"
+  class="min-h-[calc(100svh-3.5rem)] scroll-mt-14
+         bg-black px-6 py-12 text-white sm:px-12"
+>
+  <div
+    class="mx-auto flex min-h-[calc(100svh-9.5rem)]
+           w-full max-w-4xl flex-col justify-between"
+  >
+    <p class="text-base font-medium sm:text-lg">
+      portfolio 2025–2026
+    </p>
+
+    <h2 class="my-12 text-3xl font-medium sm:text-4xl">
+      thank you.
+    </h2>
+
+    <div class="text-base font-medium sm:text-lg">
+      <h3>CONTACT DETAILS</h3>
+
+      <a
+        href="tel:+393400606826"
+        class="block w-fit hover:underline"
+      >
+        +39 3400606826
+      </a>
+
+      <a
+        href="mailto:eleonorasanna29@gmail.com"
+        class="block w-fit break-all hover:underline"
+      >
+        eleonorasanna29@gmail.com
+      </a>
+
+      <a
+        href="mailto:e.sanna127@studenti.uniss.it"
+        class="block w-fit break-all hover:underline"
+      >
+        e.sanna127@studenti.uniss.it
+      </a>
+    </div>
+  </div>
+</section>
 </template>
 
 
