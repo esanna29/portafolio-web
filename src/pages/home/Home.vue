@@ -1,11 +1,33 @@
 <script setup lang="ts">
 import Projects from '@/pages/projects/Projects.vue'
+import NavigatorPrimarius from '@/components/NavigatorPrimarius.vue'
+
 const menuItems = [
-  { label: 'home', href: '#home' },
-  { label: 'about me', href: '#about-me' },
-  { label: 'background', href: '#background' },
-  { label: 'projects', href: '#projects' },
-  { label: 'contacts', href: '#contacts' },
+  {
+    label: 'home',
+    href: '#home',
+    onClick: () => scrollToSection('#home'),
+  },
+  {
+    label: 'about me',
+    href: '#about-me',
+    onClick: () => scrollToSection('#about-me'),
+  },
+  {
+    label: 'background',
+    href: '#background',
+    onClick: () => scrollToSection('#background'),
+  },
+  {
+    label: 'projects',
+    href: '#projects',
+    onClick: () => scrollToSection('#projects'),
+  },
+  {
+    label: 'contacts',
+    href: '#contacts',
+    onClick: () => scrollToSection('#contacts'),
+  },
 ]
 
 function scrollToSection(sectionId: string) {
@@ -28,19 +50,8 @@ function scrollToSection(sectionId: string) {
 </script>
 
 <template>
-  <header class="sticky top-0 z-50 min-h-14 w-full bg-black">
-  <nav aria-label="Main navigation" class="flex flex-wrap justify-center gap-2 px-4 py-3 sm:justify-end">
-    <a
-  v-for="item in menuItems"
-  :key="item.href"
-  :href="item.href"
-  @click.prevent="scrollToSection(item.href)"
-  class="rounded-full border border-white px-3 py-1 text-sm text-white hover:bg-white hover:text-black"
->
-  {{ item.label }}
-</a>
-  </nav>
-  
+<header class="sticky top-0 z-50 min-h-14 w-full bg-black">
+  <NavigatorPrimarius :items="menuItems" />
 </header>
 <div
   class="copertina-zoom grid min-h-svh grid-rows-[1fr] bg-center text-white"
