@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import Projects from '@/pages/projects/Projects.vue'
 import NavigatorPrimarius from '@/components/NavigatorPrimarius.vue'
+import { useMouseMotio } from '@/composables/useMouseMotio'
+
+const { mousePositione, cumMouseMove, cumMouseLeave } = useMouseMotio()
 
 const menuItems = [
   {
@@ -53,17 +56,25 @@ function scrollToSection(sectionId: string) {
 <header class="sticky top-0 z-50 min-h-14 w-full bg-black">
   <NavigatorPrimarius :items="menuItems" />
 </header>
+
 <div
   class="copertina-zoom grid min-h-svh grid-rows-[1fr] bg-center text-white"
-  style="background-image: url('/images/copertina-righe.jpeg')"
+  @mousemove="cumMouseMove"
+  @mouseleave="cumMouseLeave"
+  :style="{
+    backgroundImage: 'url(/images/copertina-righe.jpeg)',
+    backgroundPositionX: `calc(50% + ${mousePositione.x}px)`,
+    backgroundPositionY: `calc(50% + ${mousePositione.y}px)`,
+  }"
 >
+
   <section class="mx-auto flex w-fit max-w-full flex-col justify-center px-6 py-16 sm:px-10">
     <div class="w-fit">
   <h1 class="text-7xl font-medium tracking-tight sm:text-9xl lg:text-[10rem]">
     portfolio
   </h1>
       <p class="mt-2 text-right text-base sm:text-xl">
-      interior design
+      product and graphic design
     </p>
   </div>
 
@@ -232,11 +243,8 @@ function scrollToSection(sectionId: string) {
 
 <style scoped>
 .copertina-zoom {
-  background-size: 100% 100%;
-  transition: background-size 0.6s ease;
-}
-
-.copertina-zoom:hover {
   background-size: 115% 115%;
+  background-repeat: no-repeat;
+  transition: background-position 0.1s ease-out;
 }
 </style>
