@@ -93,9 +93,11 @@ function scrollToSection(sectionId: string) {
 
 <section
   id="about-me"
-  class="relative min-h-svh scroll-mt-14 overflow-hidden
+  class="relative flex min-h-svh flex-col justify-center
+         scroll-mt-14 overflow-hidden
          bg-white px-6 py-16 text-black sm:px-12
-         lg:min-h-[calc(100svh-3.5rem)]"
+         lg:min-h-[calc(100svh-3.5rem)]
+         lg:pt-[58px] lg:pb-[70px]"
 >
   <h2 class="text-5xl font-medium leading-tight tracking-tight sm:text-7xl">
     hello-<br />
