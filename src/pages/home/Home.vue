@@ -90,31 +90,48 @@ function scrollToSection(sectionId: string) {
   
 </div>
 <div aria-hidden="true" class="h-px w-full bg-black"></div>
+
 <section
   id="about-me"
-  class="min-h-svh scroll-mt-14 px-6 py-16 sm:px-12"
+  class="relative min-h-svh scroll-mt-14 overflow-hidden
+         bg-white px-6 py-16 text-black sm:px-12
+         lg:min-h-[calc(100svh-3.5rem)]"
 >
   <h2 class="text-5xl font-medium leading-tight tracking-tight sm:text-7xl">
     hello-<br />
     I’m Eleonora
   </h2>
-  <div class="mt-10 max-w-2xl space-y-6 text-base leading-relaxed sm:mt-16 sm:text-lg">
-  <p>
-    I’m Eleonora Sanna, a design student at University of Sassari (Alghero).
-    I have a strong interest in exploring different fields of design and
-    developing new creative skills.
-    I enjoy working on projects that allow me to combine ideas,
-    experimentation, and attention to detail, especially within graphic
-    and product design.
-  </p>
 
-  <p>
-    My passion for design began at a young age through drawing and creating.
-    Over time, this interest has grown into a desire to learn more about
-    the creative process and to express ideas in a simple, functional,
-    and personal way.
-  </p>
-</div>
+  <div
+  class="mt-10 grid items-start gap-8 sm:mt-16
+         lg:grid-cols-[1.2fr_1fr] lg:gap-12"
+>
+    <div class="max-w-2xl space-y-6 text-base leading-relaxed sm:text-lg">
+      <p>
+        I’m Eleonora Sanna, a design student at University of Sassari (Alghero).
+        I have a strong interest in exploring different fields of design and
+        developing new creative skills.
+        I enjoy working on projects that allow me to combine ideas,
+        experimentation, and attention to detail, especially within graphic
+        and product design.
+      </p>
+
+      <p>
+        My passion for design began at a young age through drawing and creating.
+        Over time, this interest has grown into a desire to learn more about
+        the creative process and to express ideas in a simple, functional,
+        and personal way.
+      </p>
+    </div>
+
+    <img
+  src="/images/about-me-drawing.png"
+  alt="Disegno architettonico a tratto nero"
+  class="mx-auto h-auto w-full max-w-xl
+         lg:absolute lg:bottom-0 lg:right-12
+         lg:mx-0 lg:w-[44%]"
+/>
+  </div>
 </section>
 
 <section
